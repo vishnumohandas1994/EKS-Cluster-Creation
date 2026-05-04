@@ -4,12 +4,12 @@ EKS Cluster creation using Terraform
 This project provisions a production-ready Amazon EKS cluster using Terraform.
 We build the cluster step by step, covering IAM roles, networking, node groups, and outputs.
 
-# Step 1 - File structure (terraform)
+# Step 1 - 
 
-File Structure        
-c1_versions.tf	    - Required Terraform + AWS provider versions
-c2_variables.tf	    - Input variables (region, cluster name, etc.)
-c3_remote-state.tf	- Remote backend for Terraform state (S3 + DynamoDB)
+ Structure        
+	    - 
+    - 
+	- 
 c4_datasources_and_locals.tf -	AWS data sources and local values
 c5_eks_tags.tf -	Common tags for resources
 c6_eks_cluster_iamrole.tf -	IAM role for EKS control plane
@@ -18,10 +18,11 @@ c8_eks_nodegroup_iamrole.tf	- IAM role for EKS worker node groups
 c9_eks_nodegroup_private.tf -	Private node group configuration
 c10_eks_outputs.tf	- Useful Terraform outputs (kubeconfig, cluster details)
 
-| First Header  | Second Header |
+| File  | File structure (terraform) |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| c1_versions.tf  | Required Terraform + AWS provider versions  |
+| c2_variables.tf	  | Input variables (region, cluster name, etc.)  |
+| c3_remote-state.tf | Remote backend for Terraform state (S3 + DynamoDB)
 
 # Step 2 - Steps to Provision 
 
