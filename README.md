@@ -22,8 +22,8 @@ File structure - terraform
 |c10_eks_outputs.tf	| Useful Terraform outputs (kubeconfig, cluster details)
 
 # Step 2 - Steps to Provision 
-
- Terraform Initialize
+Run below commands from the directory where your manifest files are created
+Terraform Initialize
 terraform init
 
  Terraform Validate
@@ -58,5 +58,9 @@ Observability
 Update history
 Tags
 
-
+#Scrfeen Shots 
+EKS Cluster 
 <img width="1916" height="383" alt="image" src="https://github.com/user-attachments/assets/18147b77-618e-4736-9b59-a91b97c3892c" />
+EC2 Instances 
+<img width="1868" height="398" alt="image" src="https://github.com/user-attachments/assets/753c66f2-89ec-48c1-8695-8b08f46bf365" />
+
