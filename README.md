@@ -18,6 +18,11 @@ c8_eks_nodegroup_iamrole.tf	- IAM role for EKS worker node groups
 c9_eks_nodegroup_private.tf -	Private node group configuration
 c10_eks_outputs.tf	- Useful Terraform outputs (kubeconfig, cluster details)
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 # Step 2 - Steps to Provision 
 
  Terraform Initialize
