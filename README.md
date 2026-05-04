@@ -6,23 +6,20 @@ We build the cluster step by step, covering IAM roles, networking, node groups, 
 
 # Step 1 - 
 
- Structure        
-	    - 
-    - 
-	- 
-c4_datasources_and_locals.tf -	AWS data sources and local values
-c5_eks_tags.tf -	Common tags for resources
-c6_eks_cluster_iamrole.tf -	IAM role for EKS control plane
-c7_eks_cluster.tf -	EKS cluster resource definition
-c8_eks_nodegroup_iamrole.tf	- IAM role for EKS worker node groups
-c9_eks_nodegroup_private.tf -	Private node group configuration
-c10_eks_outputs.tf	- Useful Terraform outputs (kubeconfig, cluster details)
+File structure - terraform
 
-| File  | File structure (terraform) |
+| File  | Description |
 | ------------- | ------------- |
 | c1_versions.tf  | Required Terraform + AWS provider versions  |
 | c2_variables.tf	  | Input variables (region, cluster name, etc.)  |
-| c3_remote-state.tf | Remote backend for Terraform state (S3 + DynamoDB)
+| c3_remote-state.tf | Remote backend for Terraform state (S3 + DynamoDB)|
+|c4_datasources_and_locals.tf|AWS data sources and local values|
+|c5_eks_tags.tf|Common tags for resources|
+|c6_eks_cluster_iamrole.tf| IAM role for EKS control plane|
+|c7_eks_cluster.tf| EKS cluster resource definition|
+|c8_eks_nodegroup_iamrole.tf| IAM role for EKS worker node groups|
+|c9_eks_nodegroup_private.tf| Private node group configuration|
+|c10_eks_outputs.tf	| Useful Terraform outputs (kubeconfig, cluster details)
 
 # Step 2 - Steps to Provision 
 
